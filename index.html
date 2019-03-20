@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To Do List</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 	<form id="new-guest" method="POST" action="#">
+      <input type="text" name="new-guest" id="new-guest" placeholder="Enter a todo item..." required>
+    </form>
+ -->
+ 	<div class="background">
+ 		<div class="textbox">
+ 			<h1> Stuff to do </h1>
+ 			
+		    <div>
+				New Task: <input type="text" id="Task" />
+			</div>
+<!-- 			<div>
+				Last Name: <input type="text" id="LastName" />
+			</div>
+
+			<div>
+				Email: <input type="email" id="email" />
+			</div>
+
+			<div>
+				Notes: 
+				<input type="textarea" id="Notes" rows="10" cols="30" />
+					<form action="/action_page.php">
+		  			</form>
+		  		</div> -->
+
+			<div>
+				<input type="button" value="+ Add" id="btn" class="add" />
+			</div>
+
+		</div>
+		<div class="textbox">
+			<h2>The List:</h2>
+			<div id="display">
+				<!-- this is where the javascript results will show -->
+			</div>
+		</div>
+
+	</div> <!-- end background image -->
+
+	<script src="indexeddb.js"></script> <!-- this is for the add button to work -->
+	<script>
+		//wire up click event to add function
+		document.querySelector("#btn").addEventListener("click", add);
+	</script>
+
+</body>
+</html>

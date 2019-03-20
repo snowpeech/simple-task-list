@@ -1,0 +1,30 @@
+* {
+	font-family: 'Quicksand', sans-serif;
+	margin:0px;
+	padding: 0px;
+}
+
+.background {
+	padding: 20px;
+	border: 5px solid rgb(63,82,99);
+/*	background-image: url("background.png");
+	background-repeat: repeat;
+	background-position: center;	 */
+	text-align: center;
+	display: block;
+}
+
+.textbox {
+	margin: 20px;
+	padding: 20px;
+  	background-color: rgba(63,82,99,.8);
+  	color: rgb(254,244,246);
+  	line-height: 2em;
+
+}
+
+.add{
+	border-radius: 2px; 
+	padding: 5px;
+	margin: 20px 10px;
+}
