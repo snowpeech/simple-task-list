@@ -51,7 +51,7 @@ function add() {
 
    //when successfully added to the database
   request.onsuccess = function(event) {
-    alert(`You're all set! `);
+    // alert(`You're all set! `);
       readAll();
 
       document.querySelector("#FirstName").value ="";
@@ -92,7 +92,6 @@ function readAll() {
 
  function remove(item) {
     var request = db.transaction(["guest"], "readwrite").objectStore("guest").delete(item);
-    alert("deleting");
 
     console.log(item);
     
